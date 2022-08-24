@@ -11,6 +11,7 @@ Currently supports:
  - keyboard input detections
 
 To install pypi package:
+
     pip install TreyEngine
 
 Note: This is built on top of [pysdl2](https://github.com/py-sdl/py-sdl2)
