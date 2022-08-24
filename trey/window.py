@@ -41,25 +41,6 @@ def initialize():
     game_globals.RENDERER = renderer
 
 
-def start(scene):
-    _start(scene)
-    old_time = 0
-    running = True
-    while running:
-        print("fps: " + str(1/(time.time()-old_time)))
-        dt = time.time()-old_time
-        old_time = time.time()
-        events = sdl2.ext.get_events()
-        for event in events:
-            if event.type == sdl2.SDL_QUIT:
-                running = False
-                break
-        _update(scene, dt)
-        _render(scene, dt)
-    sdl2.ext.quit()
-    return 0
-
-
 def _start(scene):
     assert scene, "no scene"
     try:

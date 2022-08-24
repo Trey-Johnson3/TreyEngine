@@ -29,7 +29,7 @@ class BaseScene():
 base_scene = BaseScene()
 trey.graphics.initialize()
 # change path for yourself
-trey.image.load("kitten", "TreyEngine/resources/kitten.jpg")
+trey.image.load("kitten", "resources/kitten.jpg")
 print(trey.maths.PI)
 
 trey.graphics.start(base_scene)
