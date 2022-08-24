@@ -30,7 +30,7 @@ Note: This is built on top of [pysdl2](https://github.com/py-sdl/py-sdl2)
     - want to add support of collider object creation of all polygons
         - this would probably require automatic creation of collider based on image shape
     - visualization of colliders (easy)
-
+Currently working on writing engine in C/C++ with SDL2, with wrapper for Python to be used by user
 
 
 
