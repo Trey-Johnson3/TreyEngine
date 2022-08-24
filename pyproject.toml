@@ -1,3 +1,23 @@
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TreyEngine"
+version = "0.0.1"
+authors = [
+  { name="Trey Johnson", email="treydog027@gmail.com" },
+]
+description = "A small 2D game framework for Python"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pysdl2>=0.9.13", "pysdl2-dll>=2.0.22"]
+
+[project.urls]
+"Homepage" = "https://github.com/Trey-Johnson3/TreyEngine"
